@@ -116,5 +116,4 @@ productos.getAll();
 // productos.deleteById(1);
 // productos.deleteAll();
 
-exports.Contenedor = Contenedor;
-exports.productos = productos;
+module.exports = Contenedor;
