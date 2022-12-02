@@ -10,12 +10,12 @@ app.get(`/`, (req, res) => {
 
 const PORT = process.env.PORT;
 const server = app.listen(PORT, () => {
-  console.log(`Servidor http escuchando en el puerto ${server.address().port}`);
+  console.log(`Servidor http escuchando en el puerto ${PORT}`);
 });
 
 app.get(`/productos`, (req, res) => {
-  res.send(`Los productos son ${Contenedor.productos[(0, 1, 2)]}`);
+  res.send(`Los productos son ${productos}`);
 });
 app.get(`/productoRandom`, (req, res) => {
-  res.send();
+  res.send(`El servidor funciona`);
 });
